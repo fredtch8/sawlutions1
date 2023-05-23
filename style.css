@@ -1,0 +1,235 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: black !important;
+    color:white !important;
+    font-family: 'prata' !important;
+}
+
+section{
+    margin-top:100px;
+}
+.about .text{
+    max-width: 700px;
+    text-align: justify;
+}
+.flex{
+    display:flex;
+    justify-content: space-between;
+}
+.sub-title{
+    margin-top: 60px;
+    text-align: center;
+    font-size:28px;
+    color:#949494;
+}
+.video{
+    width:-webkit-fill-available;
+    height:-webkit-fill-available;
+}
+.footer a{
+    color:white;
+    text-decoration: none;
+}
+.footer a:hover{
+    color:#949494 !important;
+}
+
+.footer .fa{
+    padding-right: 10px;
+}
+.work img{
+    max-width:400px;
+}
+.work .low{
+    margin-top:20px;
+}
+
+.navbar .ham{
+    color:white;
+    font-size:26px;
+}
+.navbar .right a{
+    color:white;
+    text-decoration: none;
+    margin-left:30px;
+}
+
+.navbar .right a:hover{
+    color:#949494;
+}
+.right2{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+    height: 0px;
+    width: 100%;
+    text-align: center;
+    /* display: block; */
+    position: absolute;
+    background-color: aliceblue;
+    animation-name: nav;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.mobile-menu ul{
+    list-style: none;
+    margin-top:70%;
+    padding-left: 0px;
+}
+.mobile-menu ul a{
+    color: black;
+    text-decoration: none;
+}
+.mobile-menu ul a:hover{
+    color: #949494;
+}
+.subsub-title{
+    text-align: left;
+    font-family: 'Bodoni Moda', serif !important;
+    font-weight: 700;
+    color: white;
+    font-size: 26px;
+    animation-name: example;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+}
+.low2{
+    margin-top: 60px;
+}
+.work img:hover{
+        opacity: 0.9;
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+    
+}
+
+#footer{
+    min-height: 135px;
+    padding: 0px 140px;
+    padding-top: 50px;
+    margin-top:50px !important;
+    border-top: 1px solid white;
+}
+
+/* @keyframes example {
+    from {left: 0px;}
+    to {left: 90%;}
+  } */
+
+  @keyframes nav {
+    from {height: 0px;}
+    to {height: 100%;}
+  }
+  @keyframes fred {
+    from {height: 100%;}
+    to {height: 0px;}
+  }
+
+@media (max-width:430px) {
+    .work img{
+        max-width:100% !important;
+    }
+    .about img{
+        max-width: 100% !important;
+    }
+    .footer .flex{
+        display: block !important;
+    }
+    .footer .col2,.footer .col3{
+        margin-top: 50px;
+    }
+    #footer{
+        padding: 0px 25px;
+        min-height: 310px;
+        padding-top: 50px;
+    }
+}
+@media (max-width:1200px){
+    .about .flex{
+        display: block;
+    }
+    .about .text{
+        max-width: 100%;
+    }
+    .work img{
+        max-width: 300px !important;
+    }
+}
+@media (max-width:1400px){
+    .work img{
+        max-width: 350px;
+    }
+}
+
+@media (max-width:1000px){
+    .work img{
+        max-width: 200px !important;
+    }
+    #footer{
+        padding:0px 90px;
+        padding-top: 50px;
+    }
+}
+@media (max-width:768px){
+    .navbar .right{
+        display: none;
+    }
+    .navbar .right2{
+        display: block;
+    }
+    #bl{
+        display:block;
+    }
+    .work .row{
+        text-align:Center;
+    }
+    .work .row img{
+        margin-top: 30px;
+    }
+    .work img{
+        max-width: 90% !important;
+    }
+    .work .low{
+        margin-top:0px;
+    }
+    .work .low2{
+        margin-top:100px;
+        padding-left: 20px;
+    }
+    #footer{
+        padding: 0px 25px;
+        padding-top: 50px;
+    }
+    #nolow2,#nolow22,#nolow222{
+        margin-top:60px;
+    }
+}
+
+.animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .animate.active {
+    opacity: 1;
+    transform: none;
+  }
+  
+  /* Set the animation styles */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  /* Apply the animation to the body */
+  body {
+    animation: fadeIn 3s ease-in-out;
+  }
+  
